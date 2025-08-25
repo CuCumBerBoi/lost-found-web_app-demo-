@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost & Found - Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="#">
+        <img src="logo.png" alt="Logo" style="height:40px; margin-right:10px;"> Lost & Found
+      </a>
+      <div class="ml-auto">
+        <a href="#lost-form" class="btn btn-custom mr-2">แจ้งของหาย</a>
+        <a href="#found-form" class="btn btn-outline-primary">แจ้งพบของ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section py-5 text-center bg-light">
+    <div class="container">
+      <img src="hero-illustration.png" alt="Lost & Found" class="mb-4" style="max-width:320px; width:100%;">
+      <h1 class="display-4 font-weight-bold mb-3">ค้นหาหรือแจ้งสิ่งของที่หาย/พบ</h1>
+      <p class="lead mb-4">ระบบกลางสำหรับแจ้งและค้นหาสิ่งของที่หายหรือพบเจอในพื้นที่ของคุณ</p>
+      <form class="form-inline justify-content-center mb-3">
+        <input class="form-control form-control-lg mr-2" type="search" placeholder="ค้นหาชื่อสิ่งของ..." aria-label="Search" style="min-width:260px;">
+        <button class="btn btn-custom btn-lg" type="submit">ค้นหา</button>
+      </form>
+      <!-- Filter Bar -->
+      <div class="d-flex flex-wrap justify-content-center align-items-center filter-bar py-2">
+        <select class="form-control mx-2 mb-2" style="min-width:140px;">
+          <option>หมวดหมู่</option>
+          <option>กระเป๋า</option>
+          <option>อุปกรณ์อิเล็กทรอนิกส์</option>
+          <option>กุญแจ</option>
+          <option>อื่นๆ</option>
+        </select>
+        <input type="date" class="form-control mx-2 mb-2" style="min-width:140px;">
+        <input type="text" class="form-control mx-2 mb-2" placeholder="สถานที่" style="min-width:140px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Lost Items Section -->
+  <section class="lost-items-section py-5 bg-white">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="font-weight-bold mb-0">รายการของหายล่าสุด</h2>
+        <a href="#all-lost" class="btn btn-outline-primary">ดูทั้งหมด</a>
+      </div>
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card item-card h-100">
+            <img src="lost1.jpg" class="card-img-top item-img" alt="Wallet">
+            <div class="card-body">
+              <h5 class="card-title">กระเป๋าสตางค์</h5>
+              <p class="card-text text-muted mb-1">วันที่หาย: 2025-08-20</p>
+              <span class="badge badge-danger">ตามหา</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card item-card h-100">
+            <img src="lost2.jpg" class="card-img-top item-img" alt="Phone">
+            <div class="card-body">
+              <h5 class="card-title">โทรศัพท์มือถือ</h5>
+              <p class="card-text text-muted mb-1">วันที่หาย: 2025-08-18</p>
+              <span class="badge badge-danger">ตามหา</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card item-card h-100">
+            <img src="lost3.jpg" class="card-img-top item-img" alt="Keys">
+            <div class="card-body">
+              <h5 class="card-title">กุญแจรถยนต์</h5>
+              <p class="card-text text-muted mb-1">วันที่หาย: 2025-08-15</p>
+              <span class="badge badge-danger">ตามหา</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card item-card h-100">
+            <img src="lost4.jpg" class="card-img-top item-img" alt="Bag">
+            <div class="card-body">
+              <h5 class="card-title">กระเป๋าเป้</h5>
+              <p class="card-text text-muted mb-1">วันที่หาย: 2025-08-10</p>
+              <span class="badge badge-danger">ตามหา</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works-section py-5 bg-light">
+    <div class="container">
+      <h2 class="font-weight-bold text-center mb-5">วิธีการใช้งาน</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="how-step mb-3">
+            <img src="icon1.png" alt="แจ้ง" style="height:60px;">
+          </div>
+          <h5>1. แจ้งข้อมูล</h5>
+          <p class="text-muted">แจ้งของหายหรือพบของผ่านระบบ</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="how-step mb-3">
+            <img src="icon2.png" alt="ตรวจสอบ" style="height:60px;">
+          </div>
+          <h5>2. ตรวจสอบรายการ</h5>
+          <p class="text-muted">ค้นหาหรือดูรายการสิ่งของที่มีในระบบ</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="how-step mb-3">
+            <img src="icon3.png" alt="รับคืน" style="height:60px;">
+          </div>
+          <h5>3. รับคืนสิ่งของ</h5>
+          <p class="text-muted">ติดต่อเจ้าของหรือผู้พบเพื่อรับคืน</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section py-4">
+    <div class="container text-center">
+      <div class="mb-2">
+        <a href="#contact" class="mx-2">ข้อมูลติดต่อ</a> |
+        <a href="#guide" class="mx-2">คู่มือการใช้งาน</a> |
+        <a href="#social" class="mx-2">Facebook</a>
+      </div>
+      <div class="text-muted small">Lost & Found © 2025</div>
+    </div>
+  </footer>
+</body>
+</html>
